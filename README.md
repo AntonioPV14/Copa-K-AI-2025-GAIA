@@ -1,4 +1,7 @@
-## Welcome to the Offical Pedro Pathing Quickstart!  
-
-Follow the steps on our [website](https://pedropathing.com/) to tune and setup!  
-Feel Free to reach out on the [Offical Pedro Pathing Discord Server](https://discord.gg/2GfC4qBP5s)!
+🤖 Copa K-AI 2025 - FTC (GAIA)Este repositorio contiene el código de control y autonomía desarrollado para la Copa K-AI 2025. Nuestra solución destaca por una navegación de alta precisión y movimientos fluidos, optimizados para los retos específicos de esta temporada de FIRST Tech Challenge.🚀 Tecnología Destacada: Pedro PathingPara la fase autónoma y la asistencia en el movimiento, hemos implementado Pedro Pathing. A diferencia de los métodos tradicionales, esta librería nos permite:Trayectorias Curvas: Movimientos más rápidos y naturales mediante curvas de Bézier.Seguimiento Dinámico: Corrección de errores en tiempo real para mantener la precisión milimétrica.Optimización de Tiempos: Reducción de frenados innecesarios entre puntos del recorrido, maximizando el puntaje en los 30 segundos de autonomía.📋 Características del ProyectoNavegación Autónoma: Rutas complejas diseñadas con PathBuilder.Control de Hardware: Configuración optimizada para motores con encoders y sensores de posición.TeleOp: Control reactivo con algoritmos de suavizado para el conductor.Sistemas: Implementación de máquinas de estados para el control del Intake y el Outtake.🛠️ Instalación y ConfiguraciónClonar el repositorio:Bashgit clone https://github.com/AntonioPV14/Copa-K-AI-2025-GAIA.git
+Abrir en Android Studio: Importa el proyecto y espera a que Gradle sincronice las dependencias (incluyendo los archivos de Pedro Pathing).Configuración del Robot: Asegúrate de que los nombres de los motores en el HardwareMap coincidan con la configuración del Control Hub.📂 Estructura de CarpetasBash├── TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+│   ├── pedroPathing/      # Archivos de configuración de la librería
+│   ├── autonomous/        # Rutinas de autonomía (Paths y lógica)
+│   ├── teleop/            # Código para el control con mando
+│   └── constants/         # Parámetros de ajuste (PID, Feedforward, etc.)
+🎮 Controles Rápidos (TeleOp)MandoFunciónStick IzquierdoTraslación (Movimiento omnidireccional)Stick DerechoRotación del chasisD-Pad Up/DownControl de elevadores (Lifts)Bumper R/LApertura y cierre de garra
